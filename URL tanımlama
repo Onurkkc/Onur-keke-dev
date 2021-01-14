@@ -1,0 +1,221 @@
+import java.util.Scanner;
+
+import jdk.nashorn.internal.ir.BreakNode;
+public class bbgödev2 {
+
+    public static void main(String[] args) {
+
+       
+            for (int g = 0; g < 10; g++) {
+            
+        
+        
+             Scanner x1 = new Scanner(System.in);
+        
+        System.out.println("Örnek URL :");
+        System.out.println("protokol(1. bölüm)//world wide web (www)//alana adı(2. bölüm)//sitede ki bulunduğunuz konum burda yazar(3.bölüm)");
+            System.out.println("1. bölüm olan protokolü giriniz");
+            for (int i = 0; i < 3; i++) {
+           
+            
+  
+        String as = x1.next();
+               if (as.equalsIgnoreCase("yok")) {//ıgnorecase kuçuk harf buyk harf uyumunu kaldırıyor önemli !!!!!!!!!!!!!!!!!!
+                 System.out.println("Sitenin güvenli olmadığı ve bu sitede hiç bir kişisel bilginizi paylaşmamanız önerilir."
+                + "\n------------------------------------------------");
+
+            break; }
+       
+        if (as.equals("https")) {
+
+            System.out.println("HTTP sonuna S eklenerek HTTPS olması HTTP Secure yani güvenli anlamına gelir. "
+                    + "\nAncak bu güvenli yazısı internet sitesinin güvenli olduğu anlamına gelmez."
+                    + "\nBu yazı internet sitesi ile cihazınız arasındaki bağlantının güvenli olduğu anlamına gelir."
+                    + "\nYani sizin siteye gönderdiğiniz her türlü veri, siteye şifrelenerek ulaşır."
+                    + "\n-----------------------------------------------");
+break;}
+          
+        if (as.equals("HTTPS")) {
+
+            System.out.println("HTTP sonuna S eklenerek HTTPS olması HTTP Secure yani güvenli anlamına gelir. "
+                    + "\nAncak bu güvenli yazısı internet sitesinin güvenli olduğu anlamına gelmez."
+                    + "\nBu yazı internet sitesi ile cihazınız arasındaki bağlantının güvenli olduğu anlamına gelir."
+                    + "\nYani sizin siteye gönderdiğiniz her türlü veri, siteye şifrelenerek ulaşır."
+                    + "\n---------------------------------------------");
+break;
+        }
+          
+        if (as.equals("Https")) {
+
+            System.out.println("HTTP sonuna S eklenerek HTTPS olması HTTP Secure yani güvenli anlamına gelir. "
+                    + "\nAncak bu güvenli yazısı internet sitesinin güvenli olduğu anlamına gelmez."
+                    + "\nBu yazı internet sitesi ile cihazınız arasındaki bağlantının güvenli olduğu anlamına gelir."
+                    + "\nYani sizin siteye gönderdiğiniz her türlü veri, siteye şifrelenerek ulaşır."
+                    + "\n-----------------------------------------------");
+break;
+        }
+ else if (as.equals("http")) {
+                 System.out.println("HTTP cihazınız ve site arasındaki ağı güvenli haline getirildiğini belirtir"
+                    + " \nHTTPS ise HTTP den daha güvenlidir bu yüzden sonuna s (secure) takısı almıştır."
+                    + "\nHer ne kadar site ile cihaz arasındaki ağ güvenli olsada bu siteinin güvenli olduğu anlamına gelmez."
+                + "\n------------------------------------------------");
+                
+            break;  }
+                        if (as.equals("Http")) {
+                 System.out.println("HTTP cihazınız ve site arasındaki ağı güvenli haline getirildiğini belirtir"
+                    + " \nHTTPS ise HTTP den daha güvenlidir bu yüzden sonuna s (secure) takısı almıştır."
+                    + "\nHer ne kadar site ile cihaz arasındaki ağ güvenli olsada bu siteinin güvenli olduğu anlamına gelmez."
+                + "\n------------------------------------------------");
+
+            break;  }
+                        
+                        if (as.equals("HTTP")) {
+                 System.out.println("HTTP cihazınız ve site arasındaki ağı güvenli haline getirildiğini belirtir"
+                    + " \nHTTPS ise HTTP den daha güvenlidir bu yüzden sonuna s (secure) takısı almıştır."
+                    + "\nHer ne kadar site ile cihaz arasındaki ağ güvenli olsada bu siteinin güvenli olduğu anlamına gelmez."
+                + "\n------------------------------------------------");
+
+            break;  }
+  if (i==2) {
+               
+      
+                        System.out.println("3 kere yanlış denediniz 2. aşamaya geçildi");
+            }
+            if (i==2) {
+                break;
+            }
+        else {
+            System.out.println("Yanlış girdiniz lütfen tekrar deneyiniz");
+            
+        }
+            }
+        
+     
+        System.out.println("Alan adı sizin verdiğiniz isim ile sayfanın içeriği hakkında bilgi sahibi olmamızı sağlayan kısaltmalarının bütünüdür.");
+        System.out.println("Lütfen url nizin alan adını aşağıdan bulup numarasını giriniz.");
+        System.out.println(
+                "1).com" + "\n2).com.tr"
+                + "\n3).com.us"
+                + "\n4).com.de"
+                + "\n5).net"
+                + "\n6).net.tr"
+                + "\n7).net.us"
+                + "\n8).net.de"
+                + "\n9).org"
+                + "\n10).org.tr"
+                + "\n11).org.us"
+                + "\n12).org.de"
+                + "\n13).blz"
+                + "\n14).blz.tr"
+                + "\n15).blz.us"
+                + "\n16).blz.de"
+                + "\n17).ınfo"
+                + "\n18).ınfo.tr"
+                + "\n19).ınfo.us"
+                + "\n20).ınfo.de"
+                + "\n21).name"
+                + "\n22).name.tr"
+                + "\n23).name.us"
+                + "\n24).name.de"
+                + "\n25).edu"
+                + "\n26).edu.tr"
+                + "\n27).edu.us"
+                + "\n28).edu.de"
+                + "\n29).gov"
+                + "\n30).gov.tr"
+                + "\n31).gov.us"
+                + "\n32).gov.de");
+        String kume[][]
+                = {
+                    {".com", "Esasında bir web sitesinin \"ticari\" (commercial) amacını temsil etmek üzere oluşturulan .com,"
+                + "\n o günden beri insanların çalışma, yaşama, oyun oynama, aile ve arkadaşlarla iletişim kurma yöntemini yeniden şekillendiren dijital devrimin merkezinde yer almaktadır."},
+                    {".com.tr", "Esasında bir web sitesinin \"ticari\" (commercial) amacını temsil etmek üzere oluşturulan .com,"
+                + "\n o günden beri insanların çalışma, yaşama, oyun oynama, aile ve arkadaşlarla iletişim kurma yöntemini yeniden şekillendiren dijital devrimin merkezinde yer almaktadır."
+                + "\nsonundaki .tr ise bu sitenin Türkiye'de faaliyet gösterdiği anlamına  gelir."},
+                    {".com.us", "Esasında bir web sitesinin \"ticari\" (commercial) amacını temsil etmek üzere oluşturulan .com,"
+                + "\n o günden beri insanların çalışma, yaşama, oyun oynama, aile ve arkadaşlarla iletişim kurma yöntemini yeniden şekillendiren dijital devrimin merkezinde yer almaktadır."
+                + "\nsonundaki .us   ise bu sitenin Amerika'da faaliyet gösterdiği anlamına  gelir."},
+                    {".com.de", "Esasında bir web sitesinin \"ticari\" (commercial) amacını temsil etmek üzere oluşturulan .com,"
+                + "\n o günden beri insanların çalışma, yaşama, oyun oynama, aile ve arkadaşlarla iletişim kurma yöntemini yeniden şekillendiren dijital devrimin merkezinde yer almaktadır."
+                + "\nsonundaki .de ise bu sitenin Almanya'da faaliyet gösterdiği anlamına  gelir."},
+                    {".net", " Network kelimesinin kısaltılmasıdır. Örgütlenme ve ağ anlamında da kullanılmaktadır."},
+                    {".net.tr", " Network kelimesinin kısaltılmasıdır. Örgütlenme ve ağ anlamında da kullanılmaktadır."
+                + "\nsonundaki .tr ise bu sitenin Türkiye'de faaliyet gösterdiği anlamına  gelir."},
+                    {".net.us", " Network kelimesinin kısaltılmasıdır. Örgütlenme ve ağ anlamında da kullanılmaktadır."
+                + "\nsonundaki .us   ise bu sitenin Amerika'da faaliyet gösterdiği anlamına  gelir."},
+                    {".net.de", " Network kelimesinin kısaltılmasıdır. Örgütlenme ve ağ anlamında da kullanılmaktadır."
+                + "\nsonundaki .de ise bu sitenin Almanya'da faaliyet gösterdiği anlamına  gelir."},
+                    {".org", ". Org alan adı uzantısı “kuruluş” anlamına gelir ve en çok kâr amacı gütmeyen kuruluşlar için kullanılır."
+                + "\nAyrıca, bazen kâr amaçlı olmayan, ancak halka bir kütüphane gibi ücretsiz bilgi ve kaynaklar sağlayan web siteleri için de kullanılır."},
+                    {".org.tr", " Org alan adı uzantısı “kuruluş” anlamına gelir ve en çok kâr amacı gütmeyen kuruluşlar için kullanılır."
+                + "\nAyrıca, bazen kâr amaçlı olmayan, ancak halka bir kütüphane gibi ücretsiz bilgi ve kaynaklar sağlayan web siteleri için de kullanılır."
+                + "\nsonundaki .tr ise bu sitenin Türkiye'de faaliyet gösterdiği anlamına  gelir."},
+                    {".org.us", " Org alan adı uzantısı “kuruluş” anlamına gelir ve en çok kâr amacı gütmeyen kuruluşlar için kullanılır."
+                + "\nAyrıca, bazen kâr amaçlı olmayan, ancak halka bir kütüphane gibi ücretsiz bilgi ve kaynaklar sağlayan web siteleri için de kullanılır."
+                + "\nsonundaki .us   ise bu sitenin Amerika'da faaliyet gösterdiği anlamına  gelir."},
+                    {".org.de", " Org alan adı uzantısı “kuruluş” anlamına gelir ve en çok kâr amacı gütmeyen kuruluşlar için kullanılır."
+                + "\nAyrıca, bazen kâr amaçlı olmayan, ancak halka bir kütüphane gibi ücretsiz bilgi ve kaynaklar sağlayan web siteleri için de kullanılır."
+                + "\nsonundaki .de ise bu sitenin Almanya'da faaliyet gösterdiği anlamına  gelir."},
+                    {".biz", " Şirketler ve kuruluşlar, yani iş ile alakalı olan siteler için kullanılan uzantılardır."},
+                    {".biz.tr", " Şirketler ve kuruluşlar, yani iş ile alakalı olan siteler için kullanılan uzantılardır."
+                + "\nsonundaki .tr ise bu sitenin Türkiye'de faaliyet gösterdiği anlamına  gelir."},
+                    {".biz.us", " Şirketler ve kuruluşlar, yani iş ile alakalı olan siteler için kullanılan uzantılardır."
+                + "\nsonundaki .us   ise bu sitenin Amerika'da faaliyet gösterdiği anlamına  gelir."},
+                    {".biz.de", " Şirketler ve kuruluşlar, yani iş ile alakalı olan siteler için kullanılan uzantılardır."
+                + "\nsonundaki .de ise bu sitenin Almanya'da faaliyet gösterdiği anlamına  gelir."},
+                    {".ınfo", "(information)Bilgi içerikli web sitesi kurmak isteyen birey ve kurumlar tarafından tercih ediliyor."},
+                    {".ınfo.tr", "(information)Bilgi içerikli web sitesi kurmak isteyen birey ve kurumlar tarafından tercih ediliyor."
+                + "\nsonundaki .tr ise bu sitenin Türkiye'de faaliyet gösterdiği anlamına  gelir."},
+                    {".ınfo.us", "(information)Bilgi içerikli web sitesi kurmak isteyen birey ve kurumlar tarafından tercih ediliyor."
+                + "\nsonundaki .us   ise bu sitenin Amerika'da faaliyet gösterdiği anlamına  gelir."},
+                    {".ınfo.de", "(information)Bilgi içerikli web sitesi kurmak isteyen birey ve kurumlar tarafından tercih ediliyor."
+                + "\nsonundaki .de ise bu sitenin Almanya'da faaliyet gösterdiği anlamına  gelir."},
+                    {".name", " Gerçek isimler için bu uzantı kullanılmaktadır. İngilizcede “nickler” kelimesinden üretilmiştir."},
+                    {".name.tr", " Gerçek isimler için bu uzantı kullanılmaktadır. İngilizcede “nickler” kelimesinden üretilmiştir."
+                + "\nsonundaki .tr ise bu sitenin Türkiye'de faaliyet gösterdiği anlamına  gelir."},
+                    {".name.us", " Gerçek isimler için bu uzantı kullanılmaktadır. İngilizcede “nickler” kelimesinden üretilmiştir."
+                + "\nsonundaki .us   ise bu sitenin Amerika'da faaliyet gösterdiği anlamına  gelir."},
+                    {".name.de", " Gerçek isimler için bu uzantı kullanılmaktadır. İngilizcede “nickler” kelimesinden üretilmiştir."
+                + "\nsonundaki .de ise bu sitenin Almanya'da faaliyet gösterdiği anlamına  gelir."},
+                    {".edu", "Eğitim kurumları için türetilmiş bir alan adı uzantısıdır. “education” kelimesinin kısaltılmışıdır."},
+                    {".edu.tr", "Eğitim kurumları için türetilmiş bir alan adı uzantısıdır. “education” kelimesinin kısaltılmışıdır."
+                + "\nsonundaki .tr ise bu sitenin Türkiye'de faaliyet gösterdiği anlamına  gelir."},
+                    {".edu.us", "Eğitim kurumları için türetilmiş bir alan adı uzantısıdır. “education” kelimesinin kısaltılmışıdır."
+                + "\nsonundaki .us   ise bu sitenin Amerika'da faaliyet gösterdiği anlamına  gelir."},
+                    {".edu.de", "Eğitim kurumları için türetilmiş bir alan adı uzantısıdır. “education” kelimesinin kısaltılmışıdır."
+                + "\nsonundaki .de ise bu sitenin Almanya'da faaliyet gösterdiği anlamına  gelir."},
+                    {".gov", " Devlet kuruluşlarının alan adı uzantısıdır. “government” kelimesinin kısaltılmışıdır."},
+                    {".gov.tr", " Devlet kuruluşlarının alan adı uzantısıdır. “government” kelimesinin kısaltılmışıdır."
+                + "\nsonundaki .tr ise bu sitenin Türkiye'de faaliyet gösterdiği anlamına  gelir."},
+                    {".gov.us", " Devlet kuruluşlarının alan adı uzantısıdır. “government” kelimesinin kısaltılmışıdır."
+                + "\nsonundaki .us   ise bu sitenin Amerika'da faaliyet gösterdiği anlamına  gelir."},
+                    {".gov.de", " Devlet kuruluşlarının alan adı uzantısıdır. “government” kelimesinin kısaltılmışıdır."
+                + "\nsonundaki .de ise bu sitenin Almanya'da faaliyet gösterdiği anlamına  gelir."}};
+          /*     for (int i = 0; i < 8; i++) {
+
+            String d1[] = {".com", ".net", ".org", ".blz", ".ınfo", ".name", ".edu", ".gov"};
+            for (int j = 0; j < 3; j++) {
+
+                String d2[] = {".tr", ".us", ".de"};
+        
+                System.out.println("\""+d1[i] + d2[j]+"\"");
+            }
+        }
+         */
+        Scanner o1 = new Scanner(System.in);
+        int o = o1.nextInt();
+        while (o < 33 && o > 0) {
+            System.out.println(kume[o - 1][0] + "'alan adının anlamı :" + kume[o - 1][1]);
+            break;
+        }
+     Scanner x2=new Scanner(System.in,"ISO-8859-9");
+            System.out.println("tekrar denemek ister misiniz ?");
+        String a2=x2.next();
+                
+            if (a2.equals("hayır")) {
+                        break;            }
+               
+            
+            
+            
+            }}}
