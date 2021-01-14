@@ -1,0 +1,61 @@
+
+
+import java.util.Scanner;
+
+public class bbgödev3 {
+
+    public static void main(String[] args) {
+        for (int j = 0; j < 1000; j++) {
+
+            Scanner x1 = new Scanner(System.in);
+            System.out.println("Bir e posta adersi giriniz : ");
+            String a = x1.nextLine();
+            int b = a.lastIndexOf("@");
+            int c = a.lastIndexOf(".");
+            String d = a.substring(b + 1, c);
+            /*
+           for (int i = 0; i < 4; i++) {
+
+            String d1[] = {"gmail","hotmail","yahoo","yandex","inbox","mail"};
+            for (int j = 0; j < 1; j++) {
+
+                String d2[] = {".com"};
+        
+                System.out.println("\""+d1[i] + d2[0]+"\"");
+        }         
+} */
+            String dizi[] = {
+                "gmail", "hotmail", "yahoo", "yandex", "inbox", "mail", "icloud"
+            };
+            int e = 0;
+            for (int i = 0; i < dizi.length; i++) {
+                if (d.equals(dizi[i])) {
+                    e++;
+
+                }
+            }
+            if (e == 1) {
+                System.out.println("Girdiğiniz e posta adresi vardır veya kurulabilir.");
+                System.out.println("Başka bir e posta sorgulamak ister misiniz ?");
+
+                String f = x1.nextLine();
+
+                if (f.equalsIgnoreCase("evet") || f.equalsIgnoreCase("olur")) {
+                    System.out.println("Bir e posta adersi giriniz : ");
+                    a = x1.nextLine();
+
+                } else {
+
+                    System.out.println("İşlem sonlandırılıyor.");
+                    break;
+                }
+
+            } else {
+                System.out.println("Yanlış bir e posta girdiniz tekrardan deneyiniz : ");
+                a = x1.nextLine();
+
+            }
+
+        }
+    }
+}
