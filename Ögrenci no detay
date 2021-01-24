@@ -113,7 +113,7 @@ public class Ödev {
             a = 16;
         } else if (a == 551) {
             a = 17;
-        } else if (a == 582) {//********
+        } else if (a == 582) {
             a = 18;
         } else if (a == 632) {
             a = 19;
@@ -222,7 +222,7 @@ public class Ödev {
         } else if (a == 509) {
             a = 71;
         }
-        System.out.println(dizi[a]);
+        System.out.println("Kayıtlı olduğunuz bölüm : "+dizi[a]);
 
         String str2 = str.substring(0, 2);
         int b = Integer.valueOf(str2);
