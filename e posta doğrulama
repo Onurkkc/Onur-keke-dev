@@ -1,4 +1,4 @@
-
+package ödev;
 
 import java.util.Scanner;
 
@@ -13,49 +13,53 @@ public class bbgödev3 {
             int b = a.lastIndexOf("@");
             int c = a.lastIndexOf(".");
             String d = a.substring(b + 1, c);
-            /*
-           for (int i = 0; i < 4; i++) {
+            String o = a.substring(c + 1);
 
-            String d1[] = {"gmail","hotmail","yahoo","yandex","inbox","mail"};
-            for (int j = 0; j < 1; j++) {
-
-                String d2[] = {".com"};
-        
-                System.out.println("\""+d1[i] + d2[0]+"\"");
-        }         
-} */
-            String dizi[] = {
+            String dizi1[] = {
                 "gmail", "hotmail", "yahoo", "yandex", "inbox", "mail", "icloud"
             };
+            int k = 0;
             int e = 0;
-            for (int i = 0; i < dizi.length; i++) {
-                if (d.equals(dizi[i])) {
+            if (o.equals("com")) {
+                k++;
+            }
+            for (int i = 0; i < dizi1.length; i++) {
+                if (d.equals(dizi1[i])) {
                     e++;
 
                 }
+
             }
-            if (e == 1) {
+
+            if (e == 1 && k == 1) {
                 System.out.println("Girdiğiniz e posta adresi vardır veya kurulabilir.");
                 System.out.println("Başka bir e posta sorgulamak ister misiniz ?");
 
                 String f = x1.nextLine();
 
                 if (f.equalsIgnoreCase("evet") || f.equalsIgnoreCase("olur")) {
-                    System.out.println("Bir e posta adersi giriniz : ");
-                    a = x1.nextLine();
-
+                    continue;
                 } else {
 
                     System.out.println("İşlem sonlandırılıyor.");
                     break;
                 }
 
-            } else {
+            } else if (k == 0 && e == 1) {
+
                 System.out.println("Yanlış bir e posta girdiniz tekrardan deneyiniz : ");
-                a = x1.nextLine();
+                System.out.println("Girilen e posta adresinde hatalı bölüm : " + o);
+
+            } else if (e == 0 && k == 1) {
+                System.out.println("Yanlış bir e posta girdiniz tekrardan deneyiniz : ");
+                System.out.println("Girilen e posta adresinde hatalı bölüm : " + d);
+
+            } else if (k == 0 && e == 0) {
+                System.out.println("Yanlış bir e posta girdiniz tekrardan deneyiniz : ");
+                System.out.println("Girilen e posta adresinde hatalı bölüm : " + d + " ve " + o);
 
             }
-
         }
     }
 }
+
