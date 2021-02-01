@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class bbgödev {
 
     public static void main(String[] args) {
-        Scanner girdi = new Scanner(System.in);
+        Scanner girdi = new Scanner(System.in,"ISO-8859-9");
 
         String[][] sehirler = {
             {"1", "Adana"},
