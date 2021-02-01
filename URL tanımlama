@@ -10,7 +10,7 @@ public class bbgödev2 {
             
         
         
-             Scanner x1 = new Scanner(System.in);
+             Scanner x1 = new Scanner(System.in,"ISO-8859-9");
         
         System.out.println("Örnek URL :");
         System.out.println("protokol(1. bölüm)//world wide web (www)//alana adı(2. bölüm)//sitede ki bulunduğunuz konum burda yazar(3.bölüm)");
